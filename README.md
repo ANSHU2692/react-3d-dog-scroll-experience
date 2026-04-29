@@ -1,20 +1,92 @@
-<<<<<<< HEAD
-# react-3d-dog-scroll-experience
-=======
-# React + Vite
+# 🐕 React 3D Dog Scroll Experience
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive 3D web experience built using React and Three.js where a 3D dog model responds to scroll and hover interactions with smooth animations, matcap transitions, and shader customization.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- 🎯 Scroll-based 3D animation using GSAP + ScrollTrigger
+- 🎨 Dynamic matcap texture transitions (shader-based)
+- 🧠 Custom shader manipulation using `onBeforeCompile`
+- 🐶 Animated GLTF 3D model with skeletal animation
+- 🖱️ Hover-based interactions triggering visual changes
+- 🌌 Fullscreen immersive canvas experience
+- ⚡ Optimized with React Three Fiber hooks
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧱 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> 44a17e1 (react 3d fox)
+### Frontend
+
+- React (Component-based UI)
+
+### 3D & Rendering
+
+- Three.js
+- React Three Fiber (`@react-three/fiber`)
+- Drei (`@react-three/drei`)
+
+### Animation
+
+- GSAP
+- ScrollTrigger
+- @gsap/react
+
+---
+
+## 📚 Concepts Used
+
+### 🎮 Three.js / WebGL
+
+- Scene, Camera, Renderer
+- Mesh & Materials (Matcap Material)
+- Texture Mapping
+- Normal Maps
+- GLTF Model Loading
+- Lighting (Directional Light)
+- Tone Mapping & Color Space
+
+### ⚛️ React Three Fiber
+
+- `Canvas` for rendering
+- `useThree` for renderer control
+- `useGLTF` for loading models
+- `useTexture` for textures
+- `useAnimations` for model animation
+- Declarative 3D scene building
+
+### 🎨 Shader Customization
+
+- `onBeforeCompile`
+- Custom uniforms
+- Fragment shader manipulation
+- Texture blending with `mix()`
+- Smooth transitions using `smoothstep()`
+
+### 🎞️ GSAP Animation
+
+- Timeline-based animation
+- ScrollTrigger integration
+- Smooth scrubbing animations
+- Property interpolation
+
+### 🧩 Advanced Interaction
+
+- DOM + 3D interaction sync
+- Hover-triggered shader updates
+- Dynamic material swapping
+
+---
+
+## 🧠 What I Learned
+
+- How to integrate Three.js with React using React Three Fiber
+- Creating and modifying shaders without writing full GLSL from scratch
+- Syncing scroll-based animations with 3D objects
+- Handling real-time texture transitions
+- Managing performance in WebGL scenes
+- Combining DOM interactions with 3D rendering
+
+---
